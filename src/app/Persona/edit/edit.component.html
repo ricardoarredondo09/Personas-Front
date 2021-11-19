@@ -1,0 +1,21 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar Personas</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="mb-3">
+                    <label for="">Nombres:</label>
+                    <input type="text" [(ngModel)]="persona.nombres" name="name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="">Apellidos:</label>
+                    <input [(ngModel)]="persona.apellidos" name="apellidos" type="text" class="form-control">
+                </div>
+                <button class="btn btn-danger" (click)="actualizar()">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
